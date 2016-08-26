@@ -1,0 +1,436 @@
+@charset "utf-8";
+
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,300,300italic,400italic,700,700italic&subset=latin,cyrillic);
+
+/* Eric Meyer's CSS Reset */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+	-webkit-box-sizing: border-box;
+	        box-sizing: border-box;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/* End of Eric Meyer's CSS Reset */
+
+a {	text-decoration: none; color: inherit; }
+a:link { text-decoration: none; color: inherit;}
+a:visited { text-decoration: none; color: inherit; }
+a:hover { text-decoration: none; color: inherit; } 
+
+html {
+	height: 100%;
+}
+article, aside, details, figcaption, figure, footer, header, hgroup, main, nav, section, summary {
+	display: block;
+}
+
+body {
+	font: 18px Helvetica, Arial, sans-serif;
+	height: 100%;
+	min-width: 1000px;
+}
+
+.wrapper {
+	min-height: 100%;
+	padding-bottom: 170px;
+	background-color: rgb(239, 239, 239);
+}
+
+.container {
+	position: relative;
+	margin: 0 auto;
+}
+
+.logo_wrapper .logo {
+    position: absolute;
+    width: 100%;
+    padding-top: 16%;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+main h2, main p {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+}
+
+/*______________________________________________*header menu*__________________________________________________*/
+
+header .container {
+    max-width: 950px;
+}
+
+header .header-nav {
+	display: block;
+	position: fixed;
+	top: 0;
+	width: 100%;
+    min-height: 100px;
+	background-color: rgba(255, 255, 255, 0.65);
+	z-index: 100;
+	padding: 15px 0 10px 0;
+	vertical-align: top;
+	min-width: 1000px;
+}
+
+header .nav-bar {
+	position: relative;
+}
+
+header .nav-trigger {
+	height: 0;
+	width: 0;
+	display: none;
+}
+
+.nav-trigger ~ label[for="nav-trigger"] { 
+	display: none;
+}
+
+header .logo_wrapper{
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    width: 14.6%;
+    min-width: 135px;
+}
+
+header .logo_wrapper .logo {
+	background-image: url('../pic/logo/logo.png');
+}
+
+.logo_wrapper p {
+    position: relative;
+    width: 100%;
+    font-family: 'Arial';
+    font-size: 20px;
+    font-weight: bold;
+    font-style: italic;
+    text-align: left;
+    color: rgb(19, 50, 133);
+    line-height: 20px;
+    margin-top: 45px;
+}
+
+header .nav-menu {
+	position: relative;
+	display: block;
+	text-align: center;
+	vertical-align: top;
+}
+
+header .top {
+    text-align: center;
+}
+
+header .bottom {
+    text-align: right;
+}
+
+header .nav-menu li {
+	display: inline;
+	line-height: 35px;
+	text-align: center;
+	font-family: 'Arial';
+	color: black;
+	cursor: pointer;
+
+	background: -webkit-linear-gradient(rgb(19, 50, 133), rgb(19, 50, 133));
+	background: -o-linear-gradient(rgb(19, 50, 133), rgb(19, 50, 133));
+	background: linear-gradient(rgb(19, 50, 133), rgb(19, 50, 133));
+	background-position: center 100%;
+	background-size: 0 3px;
+	background-repeat: no-repeat;
+	-webkit-transition: .4s ease;
+	transition: .4s ease;
+	padding-bottom: 5px;
+}
+
+header .top li {
+	vertical-align: top;
+	font-size: 16px;
+    margin-left: 1.7%;
+    margin-right: 1.7%;
+}
+
+header .bottom li {
+	vertical-align: top;
+	font-size: 14px;
+    margin-left: 1.3%;
+    margin-right: 1.3%;
+}
+
+header .bottom .blue_button {
+    font-size: 14px;
+    padding: 8px 30px 8px 30px;
+    margin: 0;
+    background-color: rgb(19, 50, 133);
+    border-radius: 5px;
+    color: white;
+}
+
+header .nav-menu li:hover {
+    color: rgb(19, 50, 133);
+	background-size: 100% 3px;
+}
+
+header .bottom .blue_button:hover {
+    background-color: rgb(0, 110, 236);
+    color: white;
+    background-size: 0;
+}
+
+html body header .active {
+	color: rgb(19, 50, 133);
+	background-size: 100% 3px;
+	cursor: default;
+}
+
+header .drop_down_container {
+	position: absolute;
+	width: 100%;
+	height: 0;
+	top: 50px;
+	background-color: white;
+	transition: .4s ease;
+	overflow: hidden;
+}
+
+header .header-nav .drop_down_appear {
+	height: 70px;
+}
+
+header .drop_down {
+	position: relative;
+	display: block;
+	max-width: 950px;
+	margin: 0 auto;
+}
+
+header .drop_down li {
+	display: inline-block;
+	cursor: pointer;
+	vertical-align: top;
+	margin-right: 3.5%;
+}
+
+header .drop_down li:last-child {
+	margin-right: 0;
+}
+
+header .drop_down div {
+	display: inline-block;
+	position: relative;
+	vertical-align: middle;
+	margin: 12px 5px 12px 0;
+
+	background: url(../pic/spritesheet.png) no-repeat;
+}
+
+header .drop_down .sprite1 {
+	width: 33px;
+	height: 44px;
+	background-position: -5px -5px;
+}
+
+header .drop_down .sprite2 {
+	width: 38px;
+	height: 46px;
+	background-position: -48px -5px;
+}
+
+header .drop_down .sprite3 {
+	width: 36px;
+	height: 45px;
+	background-position: -96px -5px;
+}
+
+header .drop_down .sprite4 {
+	width: 28px;
+	height: 43px;
+	background-position: -142px -5px;
+}
+
+header .drop_down .sprite5 {
+	width: 33px;
+	height: 46px;
+	background-position: -180px -5px;
+}
+
+header .drop_down span {
+
+	vertical-align: middle;
+
+	line-height: 43px;
+	text-align: center;
+	font-family: 'Arial';
+	color: black;
+	font-size: 14px;
+
+	background: -webkit-linear-gradient(rgb(19, 50, 133), rgb(19, 50, 133));
+	background: -o-linear-gradient(rgb(19, 50, 133), rgb(19, 50, 133));
+	background: linear-gradient(rgb(19, 50, 133), rgb(19, 50, 133));
+	background-position: center 100%;
+	background-size: 0 3px;
+	background-repeat: no-repeat;
+	-webkit-transition: .4s ease;
+	transition: .4s ease;
+	padding-bottom: 5px;
+}
+
+header .drop_down li:hover span {
+	color: rgb(19, 50, 133);
+	background-size: 100% 3px;
+}
+
+/*______________________________________________*footer*__________________________________________________*/
+footer {
+	min-height: 170px;
+	margin-top: -170px;
+	position: relative;
+	vertical-align: top;
+	background-color: rgb(67, 67, 67);
+    padding: 50px 15px 10px 15px;
+	min-width: 1000px;
+}
+
+footer .ghost_button {
+	display: block;
+	height: 0;
+	background-color: white;
+	position: fixed;
+	bottom: 10px;
+	right: 10px;
+	z-index: 999;
+	cursor: pointer;
+	opacity: 0.8;
+	border-radius: 3px;
+	font-family: 'Roboto', sans-serif;
+	font-weight: 300;
+	font-size: 18px;
+	line-height: 41px;
+	color: white;
+	text-align: center;
+	transition: 0.6s ease;
+	visibility: hidden;
+}
+
+footer .button_appear {
+	width: 129px;
+	height: 41px;
+	background-color: #c4c4c4;
+	visibility: visible;
+}
+
+footer .button_absolute {
+	position: absolute;
+	top: -60px;
+}
+
+footer .ghost_button:hover {
+	opacity: 1;
+}
+
+footer .container {
+    max-width: 830px;
+}
+
+footer .logo_wrapper{
+    display: inline-block;
+    position: relative;
+    top: 0;
+    width: 14.6%;
+    height: 55px;
+    min-width: 135px;
+    margin-right: 70px;
+    vertical-align: top;
+}
+
+footer .logo_wrapper .logo {
+    background-image: url('../pic/logo/footer_logo.png');
+}
+
+footer ul {
+    display: inline-block;
+    position: relative;
+    vertical-align: top;
+    width: 155px;
+}
+
+footer ul li {
+    display: block;
+    position: relative;
+}
+
+footer ul:last-child {
+    width: 170px;
+}
+
+footer .footer_text {
+    display: inline-block;
+    position: relative;
+    font-size: 14px;
+    font-family: 'Arial';
+    line-height: 24px;
+    color: rgb(222, 222, 222);
+    cursor: pointer;
+
+    background: -webkit-linear-gradient(rgb(0, 110, 236), rgb(0, 110, 236));
+    background: -o-linear-gradient(rgb(0, 110, 236), rgb(0, 110, 236));
+    background: linear-gradient(rgb(0, 110, 236), rgb(0, 110, 236));
+    background-position: center 100%;
+    background-size: 0 3px;
+    background-repeat: no-repeat;
+    -webkit-transition: .4s ease;
+    transition: .4s ease;
+}
+
+footer .footer_text:hover {
+    color: rgb(0, 110, 236);
+    background-size: 100% 3px;
+}
+
+footer .active {
+	color: rgb(0, 110, 236);
+	background-size: 100% 3px;
+	cursor: default;
+}
+

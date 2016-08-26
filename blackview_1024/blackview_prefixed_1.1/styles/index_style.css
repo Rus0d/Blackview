@@ -1,0 +1,270 @@
+body header .header-nav {
+    min-height: 65px;
+}
+
+.header-nav .container .logo_wrapper .logo {
+	cursor: default;
+}
+
+/*______________________________________________*main*__________________________________________________*/
+
+.white_block_wrapper {
+	position: relative;
+	background-color: white;
+}
+
+.main_container {
+    position: relative;
+    width: 1000px;
+    margin: 0 auto;
+}
+
+main p {
+	position: relative;
+	font-family: 'Roboto', sans-serif;
+	font-weight: 300;
+	font-size: 16px;
+	line-height: 1.2;
+}
+
+main h2 {
+	position: relative;
+	font-family: 'Roboto', sans-serif;
+	font-weight: 300;
+	font-size: 38px;
+	line-height: 1.2;
+}
+
+/*______________________________________________*block1*__________________________________________________*/
+
+.block1 {
+	position: relative;
+}
+
+.swiper-container {
+	width: 100%;
+	padding-top: 59%;
+}
+
+.swiper-wrapper {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+}
+
+.swiper-slide {
+	text-align: center;
+	font-size: 18px;
+	background-position: center;
+	background-size: cover;
+
+	/* Center slide text vertically */
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-box-pack: center;
+	-ms-flex-pack: center;
+	-webkit-justify-content: center;
+	justify-content: center;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	-webkit-align-items: center;
+	align-items: center;
+}
+
+.slide1 {
+	background-image: url('../pic/index/slide1.jpg');
+}
+
+.slide2 {
+	background-image: url('../pic/index/slide1.jpg');
+}
+
+.slide3 {
+	background-image: url('../pic/index/slide1.jpg');
+}
+
+.slide4 {
+	background-image: url('../pic/index/slide1.jpg');
+}
+
+.slide5 {
+	background-image: url('../pic/index/slide1.jpg');
+}
+
+.swiper-pagination {
+	display: block;
+	position: absolute;
+	left: 0;
+	right: 0;
+	text-align: center;
+}
+
+.swiper-pagination span {
+	width: 13px;
+	height: 13px;
+	margin: 20px 10px;
+}
+
+.swiper-pagination .swiper-pagination-bullet-active {
+	background: rgb(19, 50, 133);
+}
+
+/*______________________________________________*block2*__________________________________________________*/
+
+.block2_container {
+	position: relative;
+	width: 1000px;
+	margin: 0 auto;
+	padding: 150px 0 80px 0;
+}
+
+.block2 {
+	position: relative;
+	background-size: 100% 100%;
+	background-image: url('../pic/index/background_02.jpg');
+	height: 750px;
+}
+
+main .block2 h2 {
+	font-size: 40px;
+	top: -40px;
+	left: 25px;
+}
+
+main .block2 p {
+	position: absolute;
+	font-size: 14px;
+}
+
+main .block2 .a8font {
+	top: 330px;
+	left: 95px;
+}
+
+main .block2 .BV2000sfont {
+	top: 330px;
+	left: 435px;
+}
+
+main .block2 .BV5000font {
+	top: 330px;
+	left: 805px;
+}
+
+main .block2 .Gfont {
+	top: 745px;
+	left: 250px;
+}
+
+main .block2 .Plusfont {
+	top: 745px;
+	left: 600px;
+}
+
+main .block2 a {
+	display: block;
+	position: absolute;
+	cursor: pointer;
+	height: 320px;
+	width: 220px;
+}
+
+main .block2 .a8link {
+	top: 28px;
+	left: 25px;
+}
+
+main .block2 .BV2000slink {
+	top: 28px;
+	left: 404px;
+	width: 173px;
+}
+
+main .block2 .BV5000link {
+	top: 28px;
+	left: 746px;
+}
+
+main .block2 .Glink {
+	top: 442px;
+	left: 211px;
+}
+
+main .block2 .Pluslink {
+	top: 440px;
+	left: 548px;
+}
+
+/*______________________________________________*block3*__________________________________________________*/
+
+.block3 {
+	position: relative;
+	padding: 100px 25px 60px 25px;
+	overflow: auto;
+}
+
+.block3 h2 {
+	font-size: 40px;
+	margin-bottom: 30px;
+}
+
+.block3 p {
+	margin-bottom: 25px;
+}
+
+.block3 img {
+	position: relative;
+	float: right;
+	width: 429px;
+	margin-left: 30px;
+	margin-top: 20px;
+}
+
+/*______________________________________________*block4*__________________________________________________*/
+.block4_container {
+	position: relative;
+	width: 950px;
+	margin: 0 auto;
+	padding: 35px 0 45px 0;
+}
+
+.block4 {
+	position: relative;
+}
+
+.block4 h2 {
+	margin-bottom: 10px;
+	font-size: 40px;
+}
+
+.block4  p {
+	margin-bottom: 40px;
+}
+
+.block4 ul {
+
+}
+
+.block4 ul li {
+	display: inline-block;
+	position: relative;
+	width: 27.6%;
+	height: 225px;
+	margin: 0 8.6%;
+	background-image: url('../pic/index/pic-08.jpg');
+	background-size: 100% 100%;
+	vertical-align: top;
+}
+
+.block4 ul li:first-child {
+	margin: 0;
+	background-image: url('../pic/index/pic-07.jpg');
+}
+
+.block4 ul li:last-child {
+	margin: 0;
+	background-image: url('../pic/index/pic-09.jpg');
+}

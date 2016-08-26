@@ -1,0 +1,1110 @@
+@charset "utf-8";
+
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,300,300italic,400italic,700,700italic&subset=latin,cyrillic);
+
+/* Eric Meyer's CSS Reset */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+	-webkit-box-sizing: border-box;
+	        box-sizing: border-box;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/* End of Eric Meyer's CSS Reset */
+
+a {
+	text-decoration: none;
+}
+
+html {
+	height: 100%;
+}
+article, aside, details, figcaption, figure, footer, header, hgroup, main, nav, section, summary {
+	display: block;
+}
+
+body {
+	font: 18px Helvetica, Arial, sans-serif;
+	height: 100%;
+	min-width: 1000px;
+}
+
+.wrapper {
+	min-height: 100%;
+	padding-bottom: 170px;
+	background-color: rgb(239, 239, 239);
+}
+
+.container {
+	position: relative;
+	margin: 0 auto;
+}
+
+.logo_wrapper .logo {
+    position: absolute;
+    width: 100%;
+    padding-top: 16%;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+main h2, main p {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+}
+
+/*______________________________________________*header menu*__________________________________________________*/
+
+header .container {
+    max-width: 915px;
+}
+
+header .header-nav {
+	display: block;
+	position: fixed;
+	top: 0;
+	width: 100%;
+    min-height: 100px;
+	background-color: rgba(255, 255, 255, 0.65);
+	z-index: 100;
+	padding: 15px 15px 10px 15px;
+	vertical-align: top;
+}
+
+header .nav-bar {
+	position: relative;
+}
+
+header .nav-trigger {
+	height: 0;
+	width: 0;
+	display: none;
+}
+
+.nav-trigger ~ label[for="nav-trigger"] { 
+	display: none;
+}
+
+header .logo_wrapper{
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    width: 14.6%;
+    min-width: 135px;
+}
+
+header .logo_wrapper .logo {
+	background-image: url('../pic/logo/logo.png');
+}
+
+.logo_wrapper p {
+    position: relative;
+    width: 100%;
+    font-family: 'Arial';
+    font-size: 20px;
+    font-weight: bold;
+    font-style: italic;
+    text-align: left;
+    color: rgb(19, 50, 133);
+    line-height: 20px;
+    margin-top: 45px;
+}
+
+header .nav-menu {
+	position: relative;
+	display: block;
+	text-align: center;
+	vertical-align: top;
+}
+
+header .top {
+    text-align: center;
+}
+
+header .bottom {
+    text-align: right;
+}
+
+header .nav-menu li {
+	/*position: relative;*/
+	display: inline;
+	line-height: 35px;
+	text-align: center;
+	font-family: 'Arial';
+	color: black;
+	cursor: pointer;
+
+	background: -webkit-linear-gradient(rgb(19, 50, 133), rgb(19, 50, 133));
+	background: -o-linear-gradient(rgb(19, 50, 133), rgb(19, 50, 133));
+	background: linear-gradient(rgb(19, 50, 133), rgb(19, 50, 133));
+	background-position: center 100%;
+	background-size: 0 3px;
+	background-repeat: no-repeat;
+	-webkit-transition: .4s ease;
+	transition: .4s ease;
+	padding-bottom: 5px;
+}
+
+header .top li {
+    font-size: 16px;
+    margin-left: 1.7%;
+    margin-right: 1.7%;
+}
+
+header .bottom li {
+    font-size: 14px;
+    margin-left: 1.3%;
+    margin-right: 1.3%;
+}
+
+header .bottom .blue_button {
+    font-size: 14px;
+    padding: 8px 30px 8px 30px;
+    margin: 0;
+    background-color: rgb(19, 50, 133);
+    border-radius: 5px;
+    color: white;
+}
+
+header .nav-menu li:hover {
+    color: rgb(19, 50, 133);
+	background-size: 100% 3px;
+}
+
+header .bottom .blue_button:hover {
+    background-color: rgb(0, 110, 236);
+    color: white;
+    background-size: 0;
+}
+
+header .nav-menu .active {
+	color: rgb(11, 130, 166);
+	background-size: 100% 3px;
+}
+
+@media (max-width: 950px) {
+    header .top {
+        margin-left: 135px;
+    }
+
+}
+
+@media (max-width: 768px) {
+
+	.nav-trigger ~ label[for="nav-trigger"] { 
+		display: block;
+		position: absolute;
+		right: 0; 
+		top: 0;
+		z-index: 110;
+	}
+
+	.nav-trigger ~ label[for="nav-trigger"] { 
+		cursor: pointer; 
+		padding: 10px 35px 16px 0;
+	}
+
+	.nav-trigger ~ label[for="nav-trigger"] span, .nav-trigger ~ label[for="nav-trigger"] span:before, .nav-trigger ~ label[for="nav-trigger"] span:after {
+	 	cursor: pointer;
+		border-radius: 5px;
+		height: 5px;
+		width: 35px;
+		background-color: rgb(19, 50, 133);
+		position: absolute;
+		display: block;
+		content: '';
+	}
+
+	.nav-trigger ~ label[for="nav-trigger"] span:before {
+		top: -10px; 
+	}
+
+	.nav-trigger ~ label[for="nav-trigger"] span:after {
+		bottom: -10px;
+	}
+
+	.nav-trigger ~ label[for="nav-trigger"] span, .nav-trigger ~ label[for="nav-trigger"] span:before, .nav-trigger ~ label[for="nav-trigger"] span:after {
+		transition: all 500ms ease-in-out;
+	}
+
+	.nav-trigger:checked ~ label[for="nav-trigger"] span {
+		background-color: transparent;
+	}
+
+	.nav-trigger:checked ~ label[for="nav-trigger"] span:before, .nav-trigger:checked ~ label[for="nav-trigger"] span:after {
+		top: 0;
+	}
+
+	.nav-trigger:checked ~ label[for="nav-trigger"] span:before {
+		transform: rotate(45deg);
+	}
+
+	.nav-trigger:checked ~ label[for="nav-trigger"] span:after {
+		transform: rotate(-45deg);
+	}
+
+	header .nav-trigger:checked ~ .nav-bar {
+		height: 275px;
+	}
+
+	header .header-nav {
+		padding-left: 20px;
+		padding-right: 20px;
+        min-height: 50px;
+	}
+
+	header .container {
+		padding-top: 26px;
+	}
+
+	header .nav-bar {
+		overflow: hidden;
+		height: 0;
+		transition: ease-out 0.5s;
+	}
+
+    header .logo_wrapper{
+        right: 0;
+    }
+
+	header .logo {
+		display: block;
+		position: relative;
+		margin: 0 auto;
+		margin-top: 10px;
+	}
+
+	header .nav-menu {
+		display: block;
+		position: relative;
+		padding: 0;
+		margin: 0;
+		width: auto;
+	}
+
+	header .nav-menu li {
+		display: block;
+		position: relative;
+		font-size: 16px;
+		text-align: left;
+		width: 185px;
+		text-transform: none;
+		line-height: 18px;
+		margin: 10px 0;
+        margin-right: 200px;
+		transition: .4s ease;
+	}
+
+    header .nav-menu .blue_button {
+        text-align: center;
+    }
+
+    header .nav-menu li:hover {
+        background-size: 0 0;
+        color: black;
+    }
+
+}
+/*______________________________________________*main*__________________________________________________*/
+
+.main_container {
+    position: relative;
+    width: 1000px;
+    margin: 0 auto;
+}
+
+main p {
+	position: relative;
+	font-family: 'Roboto', sans-serif;
+	font-weight: 300;
+	font-size: 16px;
+	line-height: 1.2;
+}
+
+main h2 {
+	position: relative;
+	font-family: 'Roboto', sans-serif;
+	font-weight: 300;
+	font-size: 38px;
+	line-height: 1.2;
+}
+
+/*______________________________________________*block0*__________________________________________________*/
+
+.block0 {
+	position: relative;
+	padding: 1px 0;
+	background-color: white;
+	height: 100px;
+}
+
+/*______________________________________________*block1*__________________________________________________*/
+
+.block1 {
+	position: relative;
+	padding: 1px 0;
+	background-image: url('../pic/background_01.jpg');
+	background-size: 100% 100%;
+	height: 488px;
+}
+
+main .block1 h2 {
+	text-align: left;
+	font-size: 28px;
+	color: rgb(41, 153, 255);
+	margin: 0 0 15px 655px;
+}
+
+main .block1 p {
+	text-align: left;
+	color: rgb(41, 153, 255);
+	font-size: 15px;
+	margin: 255px 0 15px 655px;
+	text-transform: uppercase;
+}
+
+/*______________________________________________*block2*__________________________________________________*/
+
+.block2 {
+	position: relative;
+	padding: 1px 0;
+	background-image: url('../pic/background_02.jpg');
+	background-size: 100% 100%;
+	height: 674px;
+}
+
+main .block2 h2 {
+	text-align: center;
+	font-size: 40px;
+	color: black;
+	text-transform: uppercase;
+	margin: 40px 0 10px 0;
+}
+
+main .block2 p {
+	text-align: center;
+	color: black;
+	margin: 0 auto;
+	width: 77%;
+}
+
+/*______________________________________________*block3*__________________________________________________*/
+
+.block3 {
+	position: relative;
+	padding: 1px 0;
+	background-image: url('../pic/background_03.jpg');
+	background-size: 100% 100%;
+	height: 647px;
+}
+
+main .block3 h2 {
+	text-align: center;
+	color: white;
+	margin: 65px 0 15px 0;
+}
+
+main .block3 p {
+	text-align: center;
+	color: white;
+	margin: 0 auto;
+	width: 80%;
+}
+
+main .block3 table {
+	position: absolute;
+	top: 485px;
+	left: 670px;
+	width: 270px;
+}
+
+main .block3 tr {
+	position: relative;
+	border-bottom: 2px solid white;
+	height: 55px;
+	font-family: 'Roboto', sans-serif;
+	font-weight: 300;
+	color: white;
+}
+
+main .block3 tr td {
+	text-align: left;
+	font-size: 38px;
+	width: 50%;
+	vertical-align: bottom;
+}
+
+main .block3 tr td:last-child {
+	text-align: right;
+	font-size: 15px;
+	line-height: 26px;
+}
+
+/*______________________________________________*block4*__________________________________________________*/
+
+.block4 {
+	position: relative;
+	padding: 1px 0;
+	background-image: url('../pic/background_04.jpg');
+	background-size: 100% 100%;
+	height: 600px;
+}
+
+main .block4 h2 {
+	text-align: center;
+	color: black;
+	margin: 40px 0 20px 0;
+}
+
+main .block4 p {
+	text-align: center;
+	color: black;
+	margin: 0 auto;
+	width: 73%;
+}
+
+/*______________________________________________*block5*__________________________________________________*/
+
+.block5 {
+	position: relative;
+	padding: 1px 0;
+	background-image: url('../pic/background_05.jpg');
+	background-size: 100% 100%;
+	height: 656px;
+}
+
+main .block5 h2 {
+	text-align: center;
+	color: black;
+	font-size: 34px;
+	margin: 50px 0 10px 0;
+}
+
+main .block5 p {
+	text-align: center;
+	color: black;
+	margin: 0 auto;
+	width: 60%;
+}
+
+/*______________________________________________*block6*__________________________________________________*/
+
+.block6 {
+	position: relative;
+	padding: 1px 0;
+	background-image: url('../pic/background_06.jpg');
+	background-size: 100% 100%;
+	height: 485px;
+}
+
+main .block6 p {
+	text-align: left;
+	color: black;
+	margin: 50px 0 0 45px;
+	width: 50%;
+}
+
+
+main .block6 ul {
+	position: relative;
+	width: 270px;
+	margin: 65px 0 0 50px;
+}
+
+main .block6 ul li {
+	position: relative;
+	display: inline-block;
+	font-family: 'Roboto', sans-serif;
+	font-weight: 300;
+	line-height: 32px;
+	text-align: left;
+	font-size: 32px;
+	color: black;
+	border-bottom: 2px solid black;
+	margin-bottom: 20px;
+	vertical-align: top;
+}
+
+main .block6 ul li span {
+	line-height: 13px;
+	font-size: 13px;
+	text-transform: capitalize;
+}
+
+/*______________________________________________*block7*__________________________________________________*/
+
+.block7 {
+	position: relative;
+	padding: 1px 0;
+	background-image: url('../pic/background_07.jpg');
+	background-size: 100% 100%;
+	height: 332px;
+}
+
+/*______________________________________________*block8*__________________________________________________*/
+
+.block8 {
+	position: relative;
+	padding: 1px 0;
+	background-image: url('../pic/background_08.jpg');
+	background-size: 100% 100%;
+	height: 576px;
+}
+
+main .block8 h2 {
+	text-align: left;
+	color: black;
+	font-size: 32px;
+	margin: 175px 0 20px 55px;
+	width: 400px;
+}
+
+main .block8 p {
+	text-align: left;
+	color: black;
+	margin: 0 0 0 55px;
+	width: 400px;
+}
+
+/*______________________________________________*block9*__________________________________________________*/
+
+.block9 {
+	position: relative;
+	padding: 1px 0;
+	background-image: url('../pic/background_09.jpg');
+	background-size: 100% 100%;
+	height: 530px;
+}
+
+main .block9 h2 {
+	text-align: center;
+	color: white;
+	font-size: 34px;
+	margin: 40px 0 10px 0;
+}
+
+main .block9 p {
+	text-align: center;
+	color: white;
+	margin: 0 auto;
+	width: 640px;
+}
+
+/*______________________________________________*block10*__________________________________________________*/
+
+.block10 {
+	position: relative;
+	padding: 1px 0;
+	background-image: url('../pic/background_10.jpg');
+	background-size: 100% 100%;
+	height: 645px;
+}
+
+main .block10 h2 {
+	text-align: center;
+	color: black;
+	font-size: 34px;
+	margin: 35px 0 20px 0;
+}
+
+main .block10 p {
+	text-align: center;
+	color: black;
+	margin: 0 auto;
+	width: 650px;
+}
+
+/*______________________________________________*block11*__________________________________________________*/
+
+.block11 {
+	position: relative;
+	padding: 1px 0;
+	background-image: url('../pic/background_11.jpg');
+	background-size: 100% 100%;
+	height: 590px;
+}
+
+main .block11 h2 {
+	text-align: left;
+	color: black;
+	width: 460px;
+	margin: 130px 0 20px 410px;
+}
+
+main .block11 p {
+	text-align: left;
+	color: black;
+	width: 460px;
+	margin: 0 0 0 410px;
+}
+
+main .block11 table {
+	position: absolute;
+	top: 345px;
+	left: 410px;
+	width: 415px;
+}
+
+main .block11 tr {
+	position: relative;
+	border-bottom: 2px solid black;
+	height: 46px;
+	font-family: 'Roboto', sans-serif;
+	font-weight: 300;
+	color: black;
+}
+
+main .block11 tr td {
+	text-align: left;
+	font-size: 33px;
+	width: 50%;
+	vertical-align: bottom;
+}
+
+main .block11 tr td:last-child {
+	text-align: right;
+	font-size: 14px;
+	line-height: 26px;
+}
+
+
+/*______________________________________________*block12*__________________________________________________*/
+
+.block12 {
+	position: relative;
+	padding: 1px 0;
+	background-image: url('../pic/background_12.jpg');
+	background-size: 100% 100%;
+	height: 627px;
+}
+
+main .block12 h2 {
+	text-align: left;
+	color: white;
+	font-size: 40px;
+	width: 330px;
+	margin: 170px 0 25px 575px;
+}
+
+main .block12 p {
+	text-align: left;
+	color: white;
+	width: 330px;
+	margin: 0 0 0 575px;
+}
+
+main .block12 .micro {
+	position: absolute;
+	font-size: 15px;
+	left: 600px;
+	bottom: 115px;
+	margin: 0;
+	width: auto;
+
+}
+
+main .block12 .nano {
+	position: absolute;
+	font-size: 15px;
+	left: 787px;
+	bottom: 115px;
+	margin: 0;
+	width: auto;
+}
+
+/*______________________________________________*block13*__________________________________________________*/
+
+.block13 {
+	position: relative;
+	padding: 1px 0;
+	background-image: url('../pic/background_13.jpg');
+	background-size: 100% 100%;
+	height: 488px;
+}
+
+main .block13 h2 {
+	text-align: center;
+	color: black;
+	font-size: 24px;
+}
+
+main .block13 h2:first-child {
+	margin-top: 135px;
+}
+
+main .block13 h2:last-of-type {
+	margin-bottom: 15px;
+}
+
+main .block13 p {
+	text-align: center;
+	color: black;
+	font-size: 14px;
+}
+
+/*______________________________________________*block14*__________________________________________________*/
+
+.block14 {
+	position: relative;
+	padding: 1px 0;
+	background-image: url('../pic/background_14.jpg');
+	background-size: 100% 100%;
+	height: 488px;
+}
+
+main .block14 h2 {
+	text-align: center;
+	color: black;
+	margin: 35px 0 15px 0;
+}
+
+main .block14 p {
+	text-align: center;
+	font-size: 14px;
+	color: black;
+	width: 870px;
+	margin: 0 auto;
+}
+
+/*______________________________________________*block15*__________________________________________________*/
+
+.block15 {
+	position: relative;
+	padding: 1px 0;
+	background-image: url('../pic/background_15.jpg');
+	background-size: 100% 100%;
+	height: 620px;
+}
+
+main .block15 h2 {
+	text-align: left;
+	color: black;
+	font-size: 36px;
+	line-height: 55px;
+	margin: 90px 0 0 460px;
+	width: 50%;
+}
+
+main .block15 p {
+	text-align: left;
+	color: black;
+	margin: 0 0 10px 460px;
+	width: 48%;
+}
+
+/*______________________________________________*block16*__________________________________________________*/
+
+.block16 {
+	position: relative;
+	padding: 1px 30px;
+	background-image: url('../pic/background_16.jpg');
+	background-size: 100% 100%;
+	height: 553px;
+}
+
+
+main .block16 h2 {
+	font-size: 28px;
+	text-align: center;
+	color: black;
+	margin: 25px 0 15px 0;
+}
+
+main .block16 p {
+	text-align: center;
+	color: black;
+}
+
+/*______________________________________________*block17*__________________________________________________*/
+
+.block17 {
+	position: relative;
+	padding: 1px 0;
+	background-image: url('../pic/background_17.jpg');
+	background-size: 100% 100%;
+	height: 488px;
+}
+
+main .block17 h2 {
+	text-align: left;
+	color: black;
+	margin: 30px 0 0 60px;
+}
+
+main .block17 p {
+	position: absolute;
+	text-align: center;
+	color: black;
+	bottom: 35px;
+}
+
+main .block17 .gray {
+	left: 64px;
+}
+
+main .block17 .white {
+	left: 264px;
+}
+
+main .block17 .green {
+	left: 460px;
+}
+
+main .block17 .pink {
+	left: 664px;
+}
+
+main .block17 .blue {
+	left: 864px;
+}
+/*______________________________________________*block18*__________________________________________________*/
+
+.block18 {
+	position: relative;
+	padding: 1px 0;
+	background-image: url('../pic/background_18.jpg');
+	background-size: 100% 100%;
+	height: 488px;
+}
+
+main .block18 h2 {
+	text-align: left;
+	color: white;
+	font-size: 34px;
+	width: 48%;
+	margin: 35px 0 15px 49%;
+}
+
+main .block18 p {
+	text-align: left;
+	color: white;
+	font-size: 14px;
+	width: 48%;
+	margin: 0 0 20px 49%;
+}
+
+.block18 .list_wrapper {
+	position: relative;
+	width: 45%;
+	margin: 0 0 0 45%;
+}
+
+.block18 .list_wrapper li {
+	position: relative;
+	display: inline-block;
+	width: 50%;
+	vertical-align: top;
+}
+
+.block18 .list_wrapper li p {
+	width: auto;
+	text-align: center;
+	color: white;
+	font-size: 28px;
+	margin: 0;
+}
+
+.block18 .list_wrapper li p:nth-child(2n) {
+	font-size: 12px;
+	margin-top: 8px;
+	margin-bottom: 30px;
+}
+
+.block18 .list_wrapper li p:last-child {
+	margin-bottom: 0;
+}
+
+.block18 .list_wrapper li span {
+	border-bottom: 1px solid white;
+}
+
+/*______________________________________________*block19*__________________________________________________*/
+
+.block19 {
+	position: relative;
+	padding: 1px 0;
+	background-image: url('../pic/background_19.jpg');
+	background-size: 100% 100%;
+	height: 717px;
+}
+
+main .block19 h2 {
+	text-align: center;
+	font-size: 45px;
+	color: black;
+	margin-top: 25px;
+	margin-bottom: 15px;
+}
+
+main .block19 p {
+	text-align: center;
+	color: black;
+	width: 895px;
+	margin: 0 auto;
+	margin-bottom: 40px;
+}
+
+.block19 .container_small {
+	position: relative;
+	width: 86%;
+	margin: 0 auto;
+}
+
+.block19 .container_small li {
+	display: inline-block;
+	position: relative;
+	width: 26%;
+	vertical-align: top;
+	text-align: left;
+}
+
+.block19 .container_small li:first-child {
+	width: 24%;
+}
+
+.block19 .container_small li:last-child {
+	width: 50%;
+}
+
+.block19 .container_small li p {
+	font-family: 'Roboto', sans-serif;
+	font-weight: 300;
+	font-size: 36px;
+	line-height: 38px;
+	text-align: center;
+	color: black;
+	width: auto;
+	margin: 0;
+}
+
+.block19 .container_small li p:last-child {
+	font-family: 'Roboto', sans-serif;
+	font-weight: 300;
+	font-size: 14px;
+	line-height: 40px;
+	text-align: center;
+	color: black;
+	border-bottom: none;
+	width: auto;
+}
+
+.block19 .container_small li p span {
+	border-bottom: 2px solid black;
+}
+
+/*______________________________________________*footer*__________________________________________________*/
+footer {
+	min-height: 170px;
+	margin-top: -170px;
+	position: relative;
+	vertical-align: top;
+	background-color: rgb(67, 67, 67);
+    padding: 50px 15px 10px 15px;
+}
+
+footer .container {
+    max-width: 830px;
+}
+
+footer .logo_wrapper{
+    display: inline-block;
+    position: relative;
+    top: 0;
+    width: 14.6%;
+    height: 55px;
+    min-width: 135px;
+    margin-right: 70px;
+    vertical-align: top;
+}
+
+footer .logo_wrapper .logo {
+    background-image: url('../pic/logo/footer_logo.png');
+}
+
+footer ul {
+    display: inline-block;
+    position: relative;
+    vertical-align: top;
+    width: 155px;
+}
+
+footer ul li {
+    display: block;
+    position: relative;
+}
+
+footer ul:last-child {
+    width: 170px;
+}
+
+footer .footer_text {
+    display: inline-block;
+    position: relative;
+    font-size: 14px;
+    font-family: 'Arial';
+    line-height: 24px;
+    color: rgb(222, 222, 222);
+    cursor: pointer;
+
+    background: -webkit-linear-gradient(rgb(19, 50, 133), rgb(19, 50, 133));
+    background: -o-linear-gradient(rgb(19, 50, 133), rgb(19, 50, 133));
+    background: linear-gradient(rgb(19, 50, 133), rgb(19, 50, 133));
+    background-position: center 100%;
+    background-size: 0 3px;
+    background-repeat: no-repeat;
+    -webkit-transition: .4s ease;
+    transition: .4s ease;
+}
+
+footer .footer_text:hover {
+    color: rgb(19, 50, 133);
+    background-size: 100% 3px;
+}
+
+@media (max-width: 768px) {
+
+    footer .footer_text:hover {
+        color: rgb(222, 222, 222);
+        background-size: 0 3px;
+    }
+
+}
+

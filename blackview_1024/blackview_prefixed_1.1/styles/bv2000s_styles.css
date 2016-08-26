@@ -1,0 +1,686 @@
+/*______________________________________________*main*__________________________________________________*/
+
+.main_container {
+    position: relative;
+    width: 1000px;
+    margin: 0 auto;
+}
+
+main p {
+	position: relative;
+	font-family: 'Roboto', sans-serif;
+	font-weight: 300;
+	font-size: 16px;
+	line-height: 1.2;
+}
+
+main h2 {
+	position: relative;
+	font-family: 'Roboto', sans-serif;
+	font-weight: 300;
+	font-size: 38px;
+	line-height: 1.2;
+}
+
+/*______________________________________________*block0*__________________________________________________*/
+
+.block0 {
+	position: relative;
+	padding: 1px 0;
+	background-color: white;
+	height: 100px;
+}
+
+/*______________________________________________*block1*__________________________________________________*/
+
+.block1 {
+	position: relative;
+	padding: 1px 0;
+	background-image: url('../pic/bv2000s/background_01.jpg');
+	background-size: 100% 100%;
+	height: 488px;
+}
+
+main .block1 h2 {
+	text-align: left;
+	font-size: 28px;
+	color: rgb(41, 153, 255);
+	margin: 0 0 15px 655px;
+}
+
+main .block1 p {
+	text-align: left;
+	color: rgb(41, 153, 255);
+	font-size: 15px;
+	margin: 255px 0 15px 655px;
+	text-transform: uppercase;
+}
+
+/*______________________________________________*block2*__________________________________________________*/
+
+.block2 {
+	position: relative;
+	padding: 1px 0;
+	background-image: url('../pic/bv2000s/background_02.jpg');
+	background-size: 100% 100%;
+	height: 674px;
+}
+
+main .block2 h2 {
+	text-align: center;
+	font-size: 40px;
+	color: black;
+	text-transform: uppercase;
+	margin: 40px 0 10px 0;
+}
+
+main .block2 p {
+	text-align: center;
+	color: black;
+	margin: 0 auto;
+	width: 77%;
+}
+
+/*______________________________________________*block3*__________________________________________________*/
+
+.block3 {
+	position: relative;
+	padding: 1px 0;
+	background-image: url('../pic/bv2000s/background_03.jpg');
+	background-size: 100% 100%;
+	height: 647px;
+}
+
+main .block3 h2 {
+	text-align: center;
+	color: white;
+	margin: 65px 0 15px 0;
+}
+
+main .block3 p {
+	text-align: center;
+	color: white;
+	margin: 0 auto;
+	width: 80%;
+}
+
+main .block3 table {
+	position: absolute;
+	top: 485px;
+	left: 670px;
+	width: 270px;
+}
+
+main .block3 tr {
+	position: relative;
+	border-bottom: 2px solid white;
+	height: 55px;
+	font-family: 'Roboto', sans-serif;
+	font-weight: 300;
+	color: white;
+}
+
+main .block3 tr td {
+	text-align: left;
+	font-size: 38px;
+	width: 50%;
+	vertical-align: bottom;
+}
+
+main .block3 tr td:last-child {
+	text-align: right;
+	font-size: 15px;
+	line-height: 26px;
+}
+
+/*______________________________________________*block4*__________________________________________________*/
+
+.block4 {
+	position: relative;
+	padding: 1px 0;
+	background-image: url('../pic/bv2000s/background_04.jpg');
+	background-size: 100% 100%;
+	height: 600px;
+}
+
+main .block4 h2 {
+	text-align: center;
+	color: black;
+	margin: 40px 0 20px 0;
+}
+
+main .block4 p {
+	text-align: center;
+	color: black;
+	margin: 0 auto;
+	width: 73%;
+}
+
+/*______________________________________________*block5*__________________________________________________*/
+
+.block5 {
+	position: relative;
+	padding: 1px 0;
+	background-image: url('../pic/bv2000s/background_05.jpg');
+	background-size: 100% 100%;
+	height: 656px;
+}
+
+main .block5 h2 {
+	text-align: center;
+	color: black;
+	font-size: 34px;
+	margin: 50px 0 10px 0;
+}
+
+main .block5 p {
+	text-align: center;
+	color: black;
+	margin: 0 auto;
+	width: 60%;
+}
+
+/*______________________________________________*block6*__________________________________________________*/
+
+.block6 {
+	position: relative;
+	padding: 1px 0;
+	background-image: url('../pic/bv2000s/background_06.jpg');
+	background-size: 100% 100%;
+	height: 485px;
+}
+
+main .block6 p {
+	text-align: left;
+	color: black;
+	margin: 50px 0 0 45px;
+	width: 50%;
+}
+
+
+main .block6 ul {
+	position: relative;
+	width: 270px;
+	margin: 65px 0 0 50px;
+}
+
+main .block6 ul li {
+	position: relative;
+	display: inline-block;
+	font-family: 'Roboto', sans-serif;
+	font-weight: 300;
+	line-height: 32px;
+	text-align: left;
+	font-size: 32px;
+	color: black;
+	border-bottom: 2px solid black;
+	margin-bottom: 20px;
+	vertical-align: top;
+}
+
+main .block6 ul li span {
+	line-height: 13px;
+	font-size: 13px;
+	text-transform: capitalize;
+}
+
+/*______________________________________________*block7*__________________________________________________*/
+
+.block7 {
+	position: relative;
+	padding: 1px 0;
+	background-image: url('../pic/bv2000s/background_07.jpg');
+	background-size: 100% 100%;
+	height: 332px;
+}
+
+/*______________________________________________*block8*__________________________________________________*/
+
+.block8 {
+	position: relative;
+	padding: 1px 0;
+	background-image: url('../pic/bv2000s/background_08.jpg');
+	background-size: 100% 100%;
+	height: 576px;
+}
+
+main .block8 h2 {
+	text-align: left;
+	color: black;
+	font-size: 32px;
+	margin: 175px 0 20px 55px;
+	width: 400px;
+}
+
+main .block8 p {
+	text-align: left;
+	color: black;
+	margin: 0 0 0 55px;
+	width: 400px;
+}
+
+/*______________________________________________*block9*__________________________________________________*/
+
+.block9 {
+	position: relative;
+	padding: 1px 0;
+	background-image: url('../pic/bv2000s/background_09.jpg');
+	background-size: 100% 100%;
+	height: 530px;
+}
+
+main .block9 h2 {
+	text-align: center;
+	color: white;
+	font-size: 34px;
+	margin: 40px 0 10px 0;
+}
+
+main .block9 p {
+	text-align: center;
+	color: white;
+	margin: 0 auto;
+	width: 640px;
+}
+
+/*______________________________________________*block10*__________________________________________________*/
+
+.block10 {
+	position: relative;
+	padding: 1px 0;
+	background-image: url('../pic/bv2000s/background_10.jpg');
+	background-size: 100% 100%;
+	height: 645px;
+}
+
+main .block10 h2 {
+	text-align: center;
+	color: black;
+	font-size: 34px;
+	margin: 35px 0 20px 0;
+}
+
+main .block10 p {
+	text-align: center;
+	color: black;
+	margin: 0 auto;
+	width: 650px;
+}
+
+/*______________________________________________*block11*__________________________________________________*/
+
+.block11 {
+	position: relative;
+	padding: 1px 0;
+	background-image: url('../pic/bv2000s/background_11.jpg');
+	background-size: 100% 100%;
+	height: 590px;
+}
+
+main .block11 h2 {
+	text-align: left;
+	color: black;
+	width: 460px;
+	margin: 130px 0 20px 410px;
+}
+
+main .block11 p {
+	text-align: left;
+	color: black;
+	width: 460px;
+	margin: 0 0 0 410px;
+}
+
+main .block11 table {
+	position: absolute;
+	top: 345px;
+	left: 410px;
+	width: 415px;
+}
+
+main .block11 tr {
+	position: relative;
+	border-bottom: 2px solid black;
+	height: 46px;
+	font-family: 'Roboto', sans-serif;
+	font-weight: 300;
+	color: black;
+}
+
+main .block11 tr td {
+	text-align: left;
+	font-size: 33px;
+	width: 50%;
+	vertical-align: bottom;
+}
+
+main .block11 tr td:last-child {
+	text-align: right;
+	font-size: 14px;
+	line-height: 26px;
+}
+
+
+/*______________________________________________*block12*__________________________________________________*/
+
+.block12 {
+	position: relative;
+	padding: 1px 0;
+	background-image: url('../pic/bv2000s/background_12.jpg');
+	background-size: 100% 100%;
+	height: 627px;
+}
+
+main .block12 h2 {
+	text-align: left;
+	color: white;
+	font-size: 40px;
+	width: 330px;
+	margin: 170px 0 25px 575px;
+}
+
+main .block12 p {
+	text-align: left;
+	color: white;
+	width: 330px;
+	margin: 0 0 0 575px;
+}
+
+main .block12 .micro {
+	position: absolute;
+	font-size: 15px;
+	left: 600px;
+	bottom: 115px;
+	margin: 0;
+	width: auto;
+
+}
+
+main .block12 .nano {
+	position: absolute;
+	font-size: 15px;
+	left: 787px;
+	bottom: 115px;
+	margin: 0;
+	width: auto;
+}
+
+/*______________________________________________*block13*__________________________________________________*/
+
+.block13 {
+	position: relative;
+	padding: 1px 0;
+	background-image: url('../pic/bv2000s/background_13.jpg');
+	background-size: 100% 100%;
+	height: 488px;
+}
+
+main .block13 h2 {
+	text-align: center;
+	color: black;
+	font-size: 24px;
+}
+
+main .block13 h2:first-child {
+	margin-top: 135px;
+}
+
+main .block13 h2:last-of-type {
+	margin-bottom: 15px;
+}
+
+main .block13 p {
+	text-align: center;
+	color: black;
+	font-size: 14px;
+}
+
+/*______________________________________________*block14*__________________________________________________*/
+
+.block14 {
+	position: relative;
+	padding: 1px 0;
+	background-image: url('../pic/bv2000s/background_14.jpg');
+	background-size: 100% 100%;
+	height: 488px;
+}
+
+main .block14 h2 {
+	text-align: center;
+	color: black;
+	margin: 35px 0 15px 0;
+}
+
+main .block14 p {
+	text-align: center;
+	font-size: 14px;
+	color: black;
+	width: 870px;
+	margin: 0 auto;
+}
+
+/*______________________________________________*block15*__________________________________________________*/
+
+.block15 {
+	position: relative;
+	padding: 1px 0;
+	background-image: url('../pic/bv2000s/background_15.jpg');
+	background-size: 100% 100%;
+	height: 620px;
+}
+
+main .block15 h2 {
+	text-align: left;
+	color: black;
+	font-size: 36px;
+	line-height: 55px;
+	margin: 90px 0 0 460px;
+	width: 50%;
+}
+
+main .block15 p {
+	text-align: left;
+	color: black;
+	margin: 0 0 10px 460px;
+	width: 48%;
+}
+
+/*______________________________________________*block16*__________________________________________________*/
+
+.block16 {
+	position: relative;
+	padding: 1px 30px;
+	background-image: url('../pic/bv2000s/background_16.jpg');
+	background-size: 100% 100%;
+	height: 553px;
+}
+
+
+main .block16 h2 {
+	font-size: 28px;
+	text-align: center;
+	color: black;
+	margin: 25px 0 15px 0;
+}
+
+main .block16 p {
+	text-align: center;
+	color: black;
+}
+
+/*______________________________________________*block17*__________________________________________________*/
+
+.block17 {
+	position: relative;
+	padding: 1px 0;
+	background-image: url('../pic/bv2000s/background_17.jpg');
+	background-size: 100% 100%;
+	height: 488px;
+}
+
+main .block17 h2 {
+	text-align: left;
+	color: black;
+	margin: 30px 0 0 60px;
+}
+
+main .block17 p {
+	position: absolute;
+	text-align: center;
+	color: black;
+	bottom: 35px;
+}
+
+main .block17 .gray {
+	left: 64px;
+}
+
+main .block17 .white {
+	left: 264px;
+}
+
+main .block17 .green {
+	left: 460px;
+}
+
+main .block17 .pink {
+	left: 664px;
+}
+
+main .block17 .blue {
+	left: 864px;
+}
+/*______________________________________________*block18*__________________________________________________*/
+
+.block18 {
+	position: relative;
+	padding: 1px 0;
+	background-image: url('../pic/bv2000s/background_18.jpg');
+	background-size: 100% 100%;
+	height: 488px;
+}
+
+main .block18 h2 {
+	text-align: left;
+	color: white;
+	font-size: 34px;
+	width: 48%;
+	margin: 35px 0 15px 49%;
+}
+
+main .block18 p {
+	text-align: left;
+	color: white;
+	font-size: 14px;
+	width: 48%;
+	margin: 0 0 20px 49%;
+}
+
+.block18 .list_wrapper {
+	position: relative;
+	width: 45%;
+	margin: 0 0 0 45%;
+}
+
+.block18 .list_wrapper li {
+	position: relative;
+	display: inline-block;
+	width: 50%;
+	vertical-align: top;
+}
+
+.block18 .list_wrapper li p {
+	width: auto;
+	text-align: center;
+	color: white;
+	font-size: 28px;
+	margin: 0;
+}
+
+.block18 .list_wrapper li p:nth-child(2n) {
+	font-size: 12px;
+	margin-top: 8px;
+	margin-bottom: 30px;
+}
+
+.block18 .list_wrapper li p:last-child {
+	margin-bottom: 0;
+}
+
+.block18 .list_wrapper li span {
+	border-bottom: 1px solid white;
+}
+
+/*______________________________________________*block19*__________________________________________________*/
+
+.block19 {
+	position: relative;
+	padding: 1px 0;
+	background-image: url('../pic/bv2000s/background_19.jpg');
+	background-size: 100% 100%;
+	height: 717px;
+}
+
+main .block19 h2 {
+	text-align: center;
+	font-size: 45px;
+	color: black;
+	margin-top: 25px;
+	margin-bottom: 15px;
+}
+
+main .block19 p {
+	text-align: center;
+	color: black;
+	width: 895px;
+	margin: 0 auto;
+	margin-bottom: 40px;
+}
+
+.block19 .container_small {
+	position: relative;
+	width: 86%;
+	margin: 0 auto;
+}
+
+.block19 .container_small li {
+	display: inline-block;
+	position: relative;
+	width: 26%;
+	vertical-align: top;
+	text-align: left;
+}
+
+.block19 .container_small li:first-child {
+	width: 24%;
+}
+
+.block19 .container_small li:last-child {
+	width: 50%;
+}
+
+.block19 .container_small li p {
+	font-family: 'Roboto', sans-serif;
+	font-weight: 300;
+	font-size: 36px;
+	line-height: 38px;
+	text-align: center;
+	color: black;
+	width: auto;
+	margin: 0;
+}
+
+.block19 .container_small li p:last-child {
+	font-family: 'Roboto', sans-serif;
+	font-weight: 300;
+	font-size: 14px;
+	line-height: 40px;
+	text-align: center;
+	color: black;
+	border-bottom: none;
+	width: auto;
+}
+
+.block19 .container_small li p span {
+	border-bottom: 2px solid black;
+}
